@@ -3,7 +3,8 @@ import confetti from "canvas-confetti";
 import {useParams} from "react-router-dom";
 
 const PUPPY_GIF = "https://media.tenor.com/PTBNHIGHS-kAAAAM/dog-smile.gif";
-const PASTA_CHOCOLATE = "https://i.ibb.co/Q7sHX7BW/20250430-195502.jpg"
+// const PASTA_CHOCOLATE = "https://i.ibb.co/Q7sHX7BW/20250430-195502.jpg"
+const PASTA_CHOCOLATE = "https://i.ibb.co/G40gbzm1/IMG-1325.jpg"
 const CELEBRATE_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWR4cjRjMGl0MWNyYTVhNGk5eTN2aGRmaDZ4cjJ3ZXRnMHAxbDdwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYt5jPR6QX5pnqM/giphy.gif";
 
 function FloatingHearts() {
