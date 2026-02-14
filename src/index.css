@@ -9,10 +9,10 @@
     --background: 340 80% 95%;
     --foreground: 340 30% 20%;
 
-    --card: 340 60% 97%;
+    --card: 350 85% 95%;
     --card-foreground: 340 30% 20%;
 
-    --popover: 340 60% 97%;
+    --popover: 350 85% 95%;
     --popover-foreground: 340 30% 20%;
 
     --primary: 340 70% 55%;
@@ -47,6 +47,39 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 340 50% 8%;
+    --foreground: 340 10% 95%;
+
+    --card: 345 40% 12%;
+    --card-foreground: 340 10% 95%;
+
+    --popover: 345 40% 12%;
+    --popover-foreground: 340 10% 95%;
+
+    --primary: 340 80% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 30% 15%;
+    --secondary-foreground: 340 10% 95%;
+
+    --muted: 340 30% 15%;
+    --muted-foreground: 340 20% 70%;
+
+    --accent: 20 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 30% 20%;
+    --input: 340 30% 20%;
+    --ring: 340 80% 60%;
+
+    --valentine-warm: 350 40% 15%;
+    --valentine-glow: 340 80% 65%;
   }
 }
 
@@ -85,4 +118,35 @@
   z-index: 0;
   color: hsl(var(--primary) / 0.3);
   font-size: 1.5rem;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+.sparkle {
+  position: fixed;
+  pointer-events: none;
+  animation: sparkle ease-in-out infinite;
+  z-index: 1;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
